@@ -34,3 +34,10 @@
 
 1. Bandit algorithms smoothly decrease the amount of exploring they do over time instead of requiring you to make a sudden jump. Also they focus your resources during exploration on the better options instead of wasting time on the inferior options that are over-explored during typical A/ B testing. In fact, bandit algorithms address both of those concerns is the same way because they gradually fixate on the best available options over time. In the academic literature, this process of settling down on the best available option is called convergence. All good bandit algorithms will eventually converge.
 
+2. **epsilon-Greedy Algorithm** - In computer science, a greedy algorithm is an algorithm that always takes whatever action seems best at the present moment, even when that decision might lead to bad long term consequences. The epsilon-Greedy algorithm is almost a greedy algorithm because it generally exploits the best available option, but every once in a while the epsilon-Greedy algorithm explores the other available options. As we’ll see, the term epsilon in the algorithm’s name refers to the odds that the algorithm explores instead of exploiting.
+
+    * With probability 1 – epsilon, the epsilon-Greedy algorithm exploits the best known option.
+
+    * With probability epsilon / 2, the epsilon-Greedy algorithm explores the best known option.
+
+    * With probability epsilon / 2, the epsilon-Greedy algorithm explores the worst known option.
